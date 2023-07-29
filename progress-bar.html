@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+
+    <style>
+
+        *{box-sizing: border-box;}
+
+        .main{
+            background-color: cadetblue;
+            width: 80%;
+            padding: 10px;
+            padding-bottom: 50px;
+            border-radius: 10px;
+        }
+
+        .main li{
+            list-style: none;
+            margin: 50px 0;
+            font-weight:bold;
+            font-size: 1rem;
+            text-transform: uppercase;
+
+            position: relative;
+            
+        }
+
+        .main li::before{
+            content: '';
+            background-color: gray;
+            position: absolute;
+            width: 95%;
+            height: 20px;
+            left: 0;
+            top: calc(100% + 5px);
+            border-radius: 50px;
+        }
+
+        .main li::after{
+            content: '';
+            background-color: gray;
+            position: absolute;
+            width: 0;
+            height: 20px;
+            left: 0;
+            top: calc(100% + 5px);
+            border-radius: 50px;
+
+
+            animation-duration: 3s;
+            animation-timing-function: case ease-in-out;
+            animation-delay: 1s;
+            /* animation-iteration-count: 2; */
+            /* animation-direction: forword; */
+            animation-fill-mode: forwards;
+            
+        }
+
+        /* set animation for html */
+        .main li.html::after{
+            animation-name: html;
+        }
+
+        @keyframes html {
+            to{
+                background-color: blue;
+                width: 95%;
+                opacity: 90%;
+            }
+        }
+        /* end */
+
+         /* set animation for css */
+         .main li.css::after{
+            animation-name: css;
+        }
+
+        @keyframes css {
+            to{
+                background-color: green;
+                width: 85%;
+                opacity: 50%;
+            }
+        }
+        /* end */
+
+         /* set animation for js */
+         .main li.js::after{
+            animation-name: js;
+        }
+
+        @keyframes js {
+            to{
+                background-color: orange;
+                width: 75%;
+                opacity: 50%;
+            }
+        }
+        /* end */
+
+         /* set animation for react */
+         .main li.react::after{
+            animation-name: react;
+        }
+
+        @keyframes react {
+            to{
+                background-color: crimson;
+                width: 85%;
+                opacity: 50%;
+            }
+        }
+        /* end */
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <ul>
+            <li class="html">html</li>
+            <li class="css">css</li>
+            <li class="js">js</li>
+            <li class="react">react</li>
+        </ul>
+
+    </div>
+    
+</body>
+</html>

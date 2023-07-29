@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-layout</title>
+
+    <style>
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            /* grid-template-rows: 120px 50px auto auto 100px; */
+            /* grid-column-gap: 10px;
+            grid-row-gap: 10px; */
+
+            /* grid-gap: 10px 20px;
+        
+            background-color: black; */
+
+            align-items: center;
+            
+
+        }
+
+        .grid-container > div{
+            background-color: rgb(73, 10, 246);
+            border: 2px solid yellow;
+            padding: 5px;
+            text-align: center;
+            /* border: none; */
+            
+            
+        }
+
+        .item1{
+            /*   */
+
+            /* grid-column: 1 /5; */
+
+            grid-column: 1 / span 3;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1"> Header </div>
+        <div> menu </div>
+        <div> Main </div>
+        <div> Aside </div>
+        <div class="item1"> Footer </div>
+        <!-- <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div> -->
+    </div>
+    
+</body>
+</html>

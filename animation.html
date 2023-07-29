@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 0 auto;
+            margin-top: 250px;
+            border: 10px solid black;
+            border-radius: 50%;
+
+            animation-iteration-count: infinite;
+            /* transform-origin: bottom; */
+
+        }
+
+        @keyframes div-anim {
+
+            from {
+                width: 100px;
+                height: 100px;
+
+            }
+
+            to {
+                width: 150px;
+                height: 150px;
+
+
+            }
+
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-50px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .div:hover {
+            border: 10px solid blue;
+
+            /* animation-name: div-anim; */
+            animation-name: bounce;
+            animation-duration: 3s;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="div">
+
+
+    </div>
+</body>
+
+</html>

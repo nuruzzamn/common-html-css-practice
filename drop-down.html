@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Drop down </title>
+
+    <style>
+        
+        .main-nav{
+            background-color: bisque;
+            padding: 1% 7%;
+            text-align: center;
+            box-shadow: 2px 3px 5px #888888;
+        }
+
+        .main-nav a{
+            text-decoration: none;
+            color: red;
+            padding: 10px;
+        }
+
+        .dropdown-container{
+            display: inline;
+            position: relative;
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            background-color: bisque;
+            margin-top: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 3px 5px gray;
+        }
+
+        .dropdown-content a{
+            display: block;
+        }
+
+        .dropdown-container:hover .dropdown-content{
+            display: block;
+        }
+        
+
+
+       .fbHover:hover{
+            background-color: gray;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main-nav">
+        <a href=""> Home </a>
+        <a href=""> Tutorial </a>
+            <div class="dropdown-container">
+                <a href="" class="contact-me"> Contact Me </a>
+                <div class="dropdown-content">
+                    <a href="" class="fbHover"> Facebook </a>
+                    <a href=""> Email </a>
+                </div>
+            </div>
+        <a href=""> about me </a>
+
+    </div>
+
+</body>
+
+</html>

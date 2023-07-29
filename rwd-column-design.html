@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RWD Column Design </title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        body>div {
+            text-align: center;
+            padding: 10px;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            body>div {
+                flex: 50%;
+            }  @media only screen and (max-width: 600px) {
+            body>div {
+                flex: 50%;
+            }
+        }
+        }
+
+        @media only screen and (max-width: 900px) {
+            body>div {
+                flex: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div">
+        <h1>From div 1</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, quas?</p>
+    </div>
+
+    <div class="div">
+        <h1>From div 2</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, quas?</p>
+    </div>
+
+    <div class="div">
+        <h1>From div 3</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, quas?</p>
+    </div>
+
+    <div class="div">
+        <h1>From div 4</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, quas?</p>
+    </div>
+</body>
+
+</html>

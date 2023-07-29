@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>From-style</title>
+
+    <style>
+        /* input[type='email'], [id='password']{
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 5px;
+        } */
+
+        .div ul{
+            list-style-type: none;
+            background-color: aquamarine;
+            width: 50%;
+            padding: 20px;
+        }
+
+        .div li{
+            padding: 10px;
+
+            /* list-style: circle inside; */
+
+            /* list-style-image: url ("/f058"); */
+            
+            /* list-style-type: circle;
+            list-style-position: inside; */
+            
+
+            
+            
+        }
+
+        .div li::before{
+            content: '\f058';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: bold;
+
+            color: red;
+           
+        }
+
+        .div li:hover{
+            color:green;
+            /* background-color: blue; */
+           
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- <label for="name">
+        Name: <input type="text" id="name" >
+    </label>
+    <p></p>
+
+    <label for="email">
+        Eamil: <input type="email" id="email" >
+    </label>
+
+    <p></p>
+
+    <label for="password">
+        Password: <input type="password" id="password" >
+    </label> -->
+
+    <div class="div">
+        <ul>
+            <li> Home </li>
+            <li> Contact </li>
+            <li> About Me </li>
+        </ul>
+
+    </div>
+    
+    
+</body>
+</html>

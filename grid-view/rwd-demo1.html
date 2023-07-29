@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RWD demo 1</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .header{ 
+            background-color: burlywood;
+            padding: 1% 7%;
+            text-align: center;
+        }
+
+        .nav{
+            background-color:darkcyan;
+            padding: 1% 7%;
+            height: 25%;
+        }
+
+        .nav a{
+            text-decoration: none;
+            padding: 10px 0;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav a:hover{
+            background-color: gray;
+           
+        }
+
+        .main{
+            background-color: aqua;
+            padding: 1% 7%;
+            text-align: center;
+        }
+
+        .main p{
+            text-align: justify;
+        }
+
+        .aside{
+            background-color:darkcyan;
+            padding: 2%;
+            text-align: center;
+            color: white;
+        }
+
+        footer{
+            background-color:black;
+            padding: 1% 7%;
+            text-align: center;
+            color: white;
+        }
+
+        /* For mobile phones: */
+        [class*="col-"] {
+        width: 100%;
+        }
+
+        @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        .row{
+            display: flex;
+        }
+
+        }
+
+
+        /* scrool navigation bar */
+        /* .p1{
+            background-color: red;
+            overflow: scroll;
+            display: flex;
+           
+        }
+
+        .p1 a{
+        
+            width: 25%;
+            height: 10%;
+            padding: 5px;
+            margin: 5px;
+            display: inline-block;
+            position: relative;
+  
+            
+        }
+
+        .hoverData{
+            display: none; 
+            background-color: red;
+            width: 25%;
+            position: absolute;
+            margin-top: 60px;
+            
+            left: 300px;
+            right: 0;
+            
+            
+        }
+
+        .hoverData a{
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .p1:hover .hoverData {
+            display: block;
+            background-color: green;
+        } */
+       
+
+    </style>
+</head>
+<body>
+    <div class="header col-12">
+        <h1> RWD demo 1 </h1>
+    </div>
+
+    <div class="row">
+
+        <div class="nav col-3">
+            <a href="">Home</a>
+            <a href="">contact</a>
+            <a href="">about me</a>
+        </div>
+
+       
+
+        <div class="main col-7"> 
+
+            <!-- practice for scrool navigation bar -->
+            <!-- <div class="p1">
+
+                <a href=""> Home </a>
+                <a href=""> Home </a>
+                <a href=""> Home </a>
+                <a href=""> Home </a>
+                <a href=""> Home </a>
+                <a href=""> Home </a>
+                <a href=""> Home </a>
+                <a href=""> Home </a>
+                <a href=""> Home
+                    
+             </a>
+                    <div class="hoverData">
+                        <a href=""> home </a>
+                        <a href=""> home </a>
+                        <a href=""> home </a>
+                    </div>
+                <a href=""> Home </a>
+
+                <a href=""> Home </a>
+                <a href=""> Home </a>
+                <a href=""> Home </a>
+                <a href=""> Home </a>
+                <a href=""> Home </a>
+                <a href=""> Home </a>
+                <a href=""> Home </a>
+                <a href=""> Home </a>
+                <a href=""> Home </a>
+                <a href=""> Home </a>
+            </div> -->
+
+            
+
+            <h1> Practice for rwd design </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sint eos, eveniet consectetur minima laborum labore sequi quibusdam facere a modi facilis voluptatem? Fugit laborum maiores ipsum. Itaque, repudiandae deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sequi earum in, odit nulla molestiae aspernatur expedita et omnis inventore, voluptate ipsam quae ea minus iusto. Ipsum perspiciatis voluptatum libero pariatur molestiae ab dolorum sunt similique non. At, cupiditate neque porro rerum libero cumque odit explicabo delectus consectetur commodi nostrum.</p>
+    
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor libero, perspiciatis suscipit odio fuga, veniam quam assumenda aliquid natus eum harum earum dicta ipsum ab quisquam eligendi cumque! Quidem ullam aperiam explicabo perferendis. Odit, quasi esse asperiores aperiam officia doloremque magni adipisci itaque a dolorum, atque dicta, dolorem provident? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora necessitatibus ut suscipit ipsa ex quasi molestiae corporis quos natus quia? </p>
+        </div>
+    
+        <div class="aside col-4">
+            <div class="a1">
+                <h1> Why i learn this ? </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, possimus?</p>
+            </div>
+    
+            <div class="a1">
+                <h1> Why i learn this ? </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, possimus?</p>
+            </div>
+    
+            <div class="a1">
+                <h1> Why i learn this ? </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, possimus?</p>
+            </div>
+    
+            <div class="a1">
+                <h1> Why i learn this ? </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, possimus?</p>
+            </div>
+    
+            <div class="a1">
+                <h1> Why i learn this ? </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, possimus?</p>
+            </div>
+        </div>
+        
+    </div>
+
+  
+
+    <footer>
+        <div class="fdata">
+            <P> Copyright @zaman 2023 </P>
+        </div>
+    </footer>
+
+</body>
+</html>

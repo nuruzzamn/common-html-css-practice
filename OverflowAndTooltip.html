@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .overflow{
+            width: 500px;
+            height: 100px;
+            background-color: aqua;
+
+            overflow:auto;
+        }
+
+        .tooltip{
+            color: blue;
+            text-decoration: underline;
+            position: relative;
+        }
+
+        .tooltip .tooltip-text{
+            visibility: hidden;
+            background-color: black;
+            color: white;
+            position: absolute;
+            padding: 10px;
+            border-radius: 10px;
+            top: 20px;
+            left: 20px;
+            width: 150px;
+            
+        }
+
+        .tooltip:hover .tooltip-text{
+            visibility: visible;
+           
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="overflow">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam quasi sapiente laboriosam dolorum, veritatis voluptatum optio maxime reprehenderit, corporis id delectus porro at cum ab voluptate, molestiae reiciendis ipsam recusandae laudantium explicabo. Sequi, cupiditate! Vel, rerum non! Magnam provident eaque possimus porro excepturi, nesciunt et eum quis vero in temporibus enim nostrum fugiat ipsa fuga labore blanditiis incidunt itaque totam quo sequi ut officia sunt. Nesciunt numquam quisquam ad dicta pariatur similique autem saepe at voluptas, tenetur eos architecto voluptates deserunt? Asperiores obcaecati nam, vero animi non vel iure cum! Nisi eligendi nulla sint voluptatem. Modi ab consequuntur facere repudiandae!</p>
+    </div>
+
+    <div>
+
+        <a class="tooltip"> zaman 
+            <span class="tooltip-text">show data on tooltip</span> 
+        </a>
+        <!-- <p> show data on tooltip </p> -->
+
+
+    </div>
+</body>
+</html>
